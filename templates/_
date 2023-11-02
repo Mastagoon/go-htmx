@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<script src="https://unpkg.com/htmx.org@1.9.6"></script>
+	<link rel="stylesheet" href="../static/index.css">
+	<link rel="stylesheet" href="../static/tailwind.css">
+	<title>HTMX GO GO GO</title>
+</head>
+
+<body class="">
+	<main class="container w-fit mx-auto">
+		<div class="flex flex-col gap-3 justify-center mt-20">
+			<div class="flex flex-row ">
+				<select id="method" class="px-4 py-1 rounded-l-md bg-transparent border-2 border-r-0 border-[#444A50]"
+					name="method">
+					<option value="GET">GET</option>
+					<option value="POST">POST</option>
+					<option value="PUT">PUT</option>
+					<option value="DELETE">DELETE</option>
+				</select>
+				<input placeholder="https://example.com/api/.." type="text"
+					class="rounded-r-md border-[#444A50] px-2 border-2 outline-none w-full">
+				<button class="px-4 py-2 bg-[#296EB4] text-white rounded-md hover:opacity-80 transition-all ml-2">Send</button>
+			</div>
+			<div class="flex flex-col gap-2">
+				<div class="flex flex-row justify-between w-full items-center py-2">
+					<span>Body:</span>
+				</div>
+
+				<hr class="py-2">
+
+				<div class="flex flex-row gap-2">
+					<input placeholder="key" type="text" class="w-40 rounded-md border-[#444A50] px-2 py-1 border-2 outline-none">
+					<input placeholder="value" type="text"
+						class="rounded-md border-[#444A50] px-2 py-1 border-2 outline-none w-full">
+				</div>
+				<div class="flex flex-row justify-end">
+					<button class="px-2 py-1 bg-[#296EB444] rounded-md hover:opacity-80 self-end">Add</button>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+
+</html>
